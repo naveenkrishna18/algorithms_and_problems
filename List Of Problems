@@ -1,3 +1,6 @@
 List Of Problems In This Repository
 1. Sieve Of Eratosthene(to print n prime numbers)
 2. Printing a linked list
+3. deleting a node from the list
+4. checking weather the given list is  sorted
+5. removing duplicates from a sorted list
