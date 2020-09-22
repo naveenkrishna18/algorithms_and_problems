@@ -2,8 +2,9 @@ List Of Problems In This Repository
 1. Sieve Of Eratosthene(to print n prime numbers)
 2. Printing a linked list
 3. deleting a node from the list
-4. checking weather the given list is  sorted
+4. checking weather the given list is sorted
 5. removing duplicates from a sorted list
-6. Kadane's Algorithm
-7. Check Weather the given string is pangram
-8. Printing NxN Spiral Matrix
+6. concatenating two linked list
+7. Kadane's Algorithm
+8. Check Weather the given string is pangram
+9. Printing NxN Spiral Matrix
