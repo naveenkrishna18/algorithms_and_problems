@@ -1,25 +1,39 @@
-//Linear Search Algorithm in c++
+//Binary Search Algorithm in c++
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
 
-//Linear Search Function
-int Linear_Serach(int* array,int key, int length)
+//Binary Search Function
+int binary_search(int* array, int key, int low, int high)
 {
-    //loop to iterate to every element
-    for(int i=0;i<length;i++)
+    int mid;
+    mid =(int)((low+high)/2);
+    if (low == high)
     {
-        //comparision
-        if(array[i]==key)
+        if(array[low] == key)
         {
-            //return the position
-            return i;
+            return low;
+        }
+        else
+        {
+            return -1;
         }
     }
-    return -1;
+    else if(array[mid] == key)
+    {
+        return mid;
+    }
+    else if(array[mid] > key)
+    {
+        return binary_search(array, key, low, mid-1);
+    }
+    else
+    {
+        return binary_search(array, key, mid+1, high);
+    }
 }
 
-//Main function
+//Main Function
 int main()
 {
     int length,element;
@@ -41,7 +55,9 @@ int main()
     cin>>key;
     //calling the function
     int result;
-    result = Linear_Serach(array,key,length);
+    int low = 0;
+    int high = length-1;
+    result = binary_search(array, key, low, high);
     //printing the result
     if (result>=0)
     {
@@ -52,4 +68,4 @@ int main()
         cout<<"The Element is not in the array";
     }
     return 0;
-}   
+}

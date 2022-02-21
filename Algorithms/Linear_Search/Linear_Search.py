@@ -18,7 +18,7 @@ length = int(input("Enter the size of array : "))
 for i in range (length):
     array_item = int(input(f"Enter the item no.{i+1} in the array : "))
     array.append(array_item)
-key = int(input("Enter the element to search :"))
+key = int(input("Enter the element to search : "))
 #calling the function
 pos = Linear_Search(array,key,length)
 #printing the result
