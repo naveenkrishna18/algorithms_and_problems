@@ -8,11 +8,11 @@ def bubble_sort(array):
     #first loop
     for i in range (0,n): 
         #second loop
-        for j in range(i+1,n): 
+        for j in range(0,n-i-1): 
             #comparision
-            if array[i] > array[j]: 
+            if array[j] > array[j+1]: 
                 #calling swap function
-                array[i],array[j] = swap(array[i],array[j]) 
+                array[j],array[j+1] = swap(array[j],array[j+1]) 
     
     return array
 
