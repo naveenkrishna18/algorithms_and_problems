@@ -6,14 +6,15 @@ def swap(a,b):
 def selection_sort(array,length):
     #first loop
     for i in range (0,length):
+        min_idx = i
         #second loop
         for j in range (i+1,length):
             #comparision
-            if(array[i] > array[j]):
-                #calling swap function
-                array[i],array[j] = swap(array[i],array[j])
+            if(array[j] < array[min_idx]):
+                min_idx = j
+        #calling swap function
+        array[i],array[min_idx] = swap(array[i],array[min_idx])
     return array 
-
 
 #Main function
 #empty array creation

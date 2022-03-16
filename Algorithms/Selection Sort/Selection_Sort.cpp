@@ -15,21 +15,23 @@ void display_array(int* array, int length)
 //Selection Sort Function
 int* selection_sort(int* array,int length)
 {
-    int i,j,temp;
+    int i,j,temp,min_idx;
     //first loop
     for(i=0;i<length;i++)
     {
+        min_idx = i;
         //second loop
         for(j=i+1;j<length;j++)
         {
             //comparision and swapping
-            if(array[i] > array[j])
+            if(array[j] < array[min_idx])
             {
-                temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;    
+                    min_idx = j;
             }
         }
+        temp = array[i];
+        array[i] = array[min_idx];
+        array[min_idx] = temp;
     }
     return array;
 }
