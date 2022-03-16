@@ -30,3 +30,6 @@ for i in range (length):
 sorted_array = bubble_sort(array)
 #printing the sorted list
 print(f"The Sorted Array : {sorted_array}")
+
+
+# Time complexity O(n²) in the average and worst cases and O(n) in the best case.

@@ -61,3 +61,5 @@ int main()
     display_array(sorted_array, length);
     return 0;
 }
+
+//Time complexity O(n²) in the average and worst cases and O(n) in the best case.
