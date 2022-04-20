@@ -1,3 +1,4 @@
 # algorithms_and_problems
-An Repository For Some of algorithms and problems
+An Repository For Some of algorithms and problems for practice
+
 
